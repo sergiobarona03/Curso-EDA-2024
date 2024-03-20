@@ -88,7 +88,7 @@ gender.recod <- factor(gender,
 #### Crear matriz
 
 # Crear según columnas (default)
-m1 <- matrix(1:9,nrow = 3, ncol = 3, byrow = F)
+m1 <- matrix(c(1,2,4,6,7,4,1,3,2),nrow = 3, ncol = 3, byrow = F)
 
 # Crear según filas
 m2 <- matrix(1:9, nrow = 3, ncol = 3, byrow = T)
@@ -288,10 +288,10 @@ help("tidyverse")
 # Como primer paso, importamos la base de datos
 # Definir directorio de trabajo
 file.choose()
-setwd("C:/Users/Portatil/Desktop/Curso-EDA-2024/")
+setwd("C:/Users/PC/Desktop/Curso-EDA-2024/")
 
 # Importar formato .xlsx
-dataset <- readxl::read_excel("geih_dataset.xlsx")
+dataset <- readxl::read_excel("Datos/Formatos/geih_dataset.xlsx")
 
 # Véase las rutas alternativas
 dataset <- readxl::read_excel(file.choose())
