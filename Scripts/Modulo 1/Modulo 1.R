@@ -203,7 +203,7 @@ lista/2
 
 # Siguiendo la estructura general, definimos el siguiente condicional
 
-x <- 10
+x <- 2
 if (x > 5) {
   print("x es mayor que 5")
 }
@@ -237,10 +237,14 @@ par_impar <- function(x){
   }
 }
 
-par_impar(5)
+par_impar(2)
 
 ##### Práctica: Crear una función que identifique si el vector es numérico;
 ##### y, si es así, calcule la media, mediana, percentil 25 y 75
+mean()
+median()
+quantile(x, probs = 0.75)
+
 ##### Nota: use una lista.
 
 # Solución:
@@ -279,7 +283,10 @@ library(tidyverse)
 
 # Documentación del paquete
 help("tidyverse")
-?read_excel
+??tidyverse
+help(filter)
+
+dplyr::filter()
 
 #------------------------------------------------#
 # Importar bases de datos en diferentes formatos #
@@ -288,7 +295,7 @@ help("tidyverse")
 # Como primer paso, importamos la base de datos
 # Definir directorio de trabajo
 file.choose()
-setwd("C:/Users/PC/Desktop/Curso-EDA-2024/")
+setwd("C:/Users/Portatil/Desktop/Curso-EDA-2024/")
 
 # Importar formato .xlsx
 dataset <- readxl::read_excel("Datos/Formatos/geih_dataset.xlsx")
